@@ -1,0 +1,23 @@
+{
+  "_note": "Seed data only — a handful of well-known, well-documented RouterOS CVEs to get version_check.py working end-to-end. Replace/extend this by pulling from the NVD API keyed to MikroTik's CPE, or by studying how Microsoft's open-source routeros-scanner maintains its version->CVE JSON mapping (reuse that approach rather than rebuilding it from scratch). Keep this file's shape stable if you swap the source: version_check.py expects a list of {cve_id, affected_before, severity, description} objects.",
+  "cves": [
+    {
+      "cve_id": "CVE-2018-14847",
+      "affected_before": "6.42",
+      "severity": "critical",
+      "description": "Winbox directory traversal allowing unauthenticated read of arbitrary files, including user database — the flaw at the root of the Meris and several other botnets."
+    },
+    {
+      "cve_id": "CVE-2019-3924",
+      "affected_before": "6.45",
+      "severity": "high",
+      "description": "RouterOS proxy/DNS can be abused for SSRF and reflected attacks against internal hosts."
+    },
+    {
+      "cve_id": "CVE-2023-30799",
+      "affected_before": "6.49.7",
+      "severity": "critical",
+      "description": "Privilege escalation from a low-privileged user to full admin via the Winbox/HTTP interface; hundreds of thousands of devices remained exposed to this well after patches shipped."
+    }
+  ]
+}
