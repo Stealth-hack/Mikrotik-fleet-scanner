@@ -77,3 +77,4 @@ your single CHR, add more devices via the `/devices` API and loop.
   README section above
 - Big data / streaming infra — not justified at this data volume, see
   project notes
+# Microtik-fleet-scannet
